@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  color: #1e3a8a;
+  padding: 10px;
+}
+
+.main-header {
+  background: #1f5489;
+  color: white;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo img {
+  height: 150px;
+}
+
+.site-info {
+  flex: 1;
+  justify-items: center;
+}
+
+.site-info h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.site-info .tagline {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.nav-menu ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  transition: color 0.3s;
+}
+
+.nav-menu a.active,
+.nav-menu a:hover {
+  color: #fbbf24;
+}
+
+main {
+  padding: 40px 20px;
+}
+
+.consultation-section {
+  background-color: #f0f6ff;
+  padding: 40px 20px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  border: 1px solid #cbd5e1;
+}
+
+.consultation-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.consultation-header h2 {
+  color: #1d4ed8;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.consultation-header p {
+  font-size: 1rem;
+  color: #1e40af;
+}
+
+.consultation-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.consult-block {
+  flex: 1 1 300px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  box-shadow: 0 2px 5px rgba(59, 130, 246, 0.1);
+  text-align: center;
+}
+
+.consult-block h3 {
+  font-size: 1.1rem;
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.consult-block p {
+  color: #1e3a8a;
+  margin-bottom: 15px;
+}
+
+.wa-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3b82f6;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.wa-link:hover {
+  background-color: #2563eb;
+}
+
+.contact-section {
+  max-width: 600px;
+  margin: auto;
+  background-color: #f1f5ff;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+}
+
+.contact-section h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #1d4ed8;
+}
+
+.contact-section p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #94a3b8;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #2563eb;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.status {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #1e40af;
+}
+
+footer {
+  background: #e0ecff;
+  text-align: center;
+  padding: 15px;
+  color: #1e3a8a;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media screen and (max-width: 800px) {
+    .header-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .contact-section {
+    padding: 20px 15px;
+  }
+    .consultation-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}

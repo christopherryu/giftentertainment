@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  color: #1e3a8a;
+  line-height: 1.6;
+  padding: 10px;
+}
+
+.main-header {
+  background: #1f5489;
+  color: white;
+  padding: 20px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo img {
+  height: 150px;
+}
+
+.site-info {
+  flex: 1;
+  justify-items: center;
+}
+
+.site-info h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.site-info .tagline {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.nav-menu ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  transition: color 0.3s;
+}
+
+.nav-menu a.active,
+.nav-menu a:hover {
+  color: #fbbf24;
+}
+
+main {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+  
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+  
+input[type="radio"] {
+    margin-right: 0.5rem;
+}
+  
+button {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    background-color: #111;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+ }
+  
+button:hover {
+    background-color: #444;
+}
+  
+#formMsg {
+    margin-top: 1rem;
+    color: red;
+}
+
+footer {
+  background: #e0ecff;
+  text-align: center;
+  padding: 15px;
+  color: #1e3a8a;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media screen and (max-width: 800px) {
+  main, footer {
+    padding: 15px;
+  }
+
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+    main {
+      padding: 1rem;
+      margin: 1rem;
+    }
+}

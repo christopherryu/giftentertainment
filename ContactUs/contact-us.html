@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Entertainment - Contact Us</title>
+    <link rel="stylesheet" href="contact-us.css">
+</head>
+<body>
+  <header class="main-header">
+  <div class="header-container">
+    <div class="logo">
+      <img src="../Media/logo.png" alt="The Gift Logo" />
+    </div>
+    <div class="site-info">
+      <h1>Gift Entertainment</h1>
+      <p class="tagline">Giving The Best Experience For Your Event</p>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../AboutUs/about-us.html">About Us</a></li>
+          <li><a href="../Testimoni/testimoni.html">Testimoni</a></li>
+          <li><a href="../FYI/fyi.html">FYI</a></li>
+          <li><a href="../OurService/our-service.html">Our Service</a></li>
+          <li><a href="../PriceList/price-list.html">Price List</a></li>
+          <li><a href="../ContactUs/contact-us.html" class="active">Contact</a></li>
+          <li><a href="../Register/register.html">Register</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  </header>
+
+  <main>
+    <section class="consultation-section">
+    <div class="consultation-header">
+        <h2>Konsultasi Dengan Ahlinya</h2>
+        <p>Lokasi Anda di luar Bandung? Santai aja, semuanya bisa diatur.</p>
+    </div>
+
+    <div class="consultation-content">
+        <div class="consult-block">
+            <h3>💬 CHAT DENGAN SPESIALIS</h3>
+            <p>Mau konsultasi gratis tentang kebutuhan acara Anda?</p>
+            <a href="https://wa.me/6285161386190" target="_blank" class="wa-link">Chat di WhatsApp Sekarang</a>
+        </div>
+        <div class="consult-block">
+            <h3>🏠 ALAMAT</h3>
+            <p>JL. Kiwi No. 4, RT 02/RW 01<br />
+                Komplek Dadali Maleber, Kec. Andir<br />
+                Kota Bandung, 40184<br />
+                <strong>thegiftentertainment.com</strong>
+            </p>
+        </div>
+    </div>
+    </section>
+
+    <section class="contact-section">
+      <h2>Hubungi Kami</h2>
+      <p>Silakan isi formulir berikut untuk bertanya atau melakukan pemesanan.</p>
+
+      <form id="contactForm" onsubmit="return validateForm(event)">
+        <label for="nama">Nama *</label>
+        <input type="text" id="nama" name="nama" placeholder="Nama lengkap" required />
+
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required />
+
+        <label for="pesan">Pesan *</label>
+        <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis pesan Anda..." required></textarea>
+
+        <button type="submit">Kirim Pesan</button>
+      </form>
+
+      <div id="statusMessage" class="status"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 The Gift Entertainment. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

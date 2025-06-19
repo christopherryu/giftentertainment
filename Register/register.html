@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Entertainment - Register</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+
+  <header class="main-header">
+  <div class="header-container">
+    <div class="logo">
+      <img src="../Media/logo.png" alt="The Gift Logo" />
+    </div>
+    <div class="site-info">
+      <h1>Gift Entertainment</h1>
+      <p class="tagline">Giving The Best Experience For Your Event</p>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../AboutUs/about-us.html">About Us</a></li>
+          <li><a href="../Testimoni/testimoni.html">Testimoni</a></li>
+          <li><a href="..FYI/fyi.html">FYI</a></li>
+          <li><a href="../OurService/our-service.html">Our Service</a></li>
+          <li><a href="../PriceList/price-list.html">Price List</a></li>
+          <li><a href="../ContactUs/contact-us.html">Contact</a></li>
+          <li><a href="../Register/register.html" class="active">Register</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  </header>
+
+  <main>
+    <form id="registerForm">
+      <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" />
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" />
+      </div>
+
+      <div class="form-group">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" />
+      </div>
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" readonly />
+      </div>
+      
+
+      <div class="form-group">
+        <label>Gender:</label>
+        <label><input type="radio" name="gender" value="male" /> Male</label>
+        <label><input type="radio" name="gender" value="female" /> Female</label>
+      </div>
+
+      <button type="submit">Register</button>
+      <p id="formMsg"></p>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 The Gift Entertainment. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
